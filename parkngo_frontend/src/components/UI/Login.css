@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Shizuru&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Shizuru&display=swap');
+.login {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #272727 74%);
+  background-repeat: no-repeat;
+  color: aquamarine;
+  box-sizing: border-box;
+  padding: 15px;
+  height: 100vh;
+  width: 100vw;
+  
+}
+.login > h1{
+  font-family: "Shizuru", cursive;
+  font-size: 50px;
+}
+.login-container {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  background-color: rgba(35, 55, 75, 0.9);
+  border-radius: 10px;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vh;
+  align-items: center;
+}
+
+.login-container > form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.email-container {
+  position: relative;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.password-container {
+  position: relative;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.email-container > label {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-right: 25px;
+  font-family: "Shizuru", cursive;
+}
+.password-container > label {
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "Shizuru", cursive;
+}
+#email,
+#password {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 10px;
+}
+.button-container {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  padding: 2px;
+}
+
+.login-button {
+  border: none;
+  outline: none;
+  color: #272727;
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset,
+    rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+    font-family: 'Roboto Slab', serif;
+  background-color: aquamarine;
+}
+
+.register-button {
+  border: none;
+  outline: none;
+  color: #272727;
+  font-size: larger;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset,
+    rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+  font-family: 'Roboto Slab', serif;
+  background-color: cornflowerblue;
+}
