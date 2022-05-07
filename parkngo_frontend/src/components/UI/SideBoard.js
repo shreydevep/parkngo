@@ -4,9 +4,9 @@ import "./SideBoard.css";
 const SideBoard = ({ myLocationRef, widgetsClickHandler }) => {
   return (
     <div className="side">
-      <div onClick={widgetsClickHandler}>Widgets</div>
-      <div>sideboard</div>
+      <div>Become Host</div>
       <div>Bookings</div>
+      <div onClick={widgetsClickHandler}>Widgets</div>
       <div className="locationFilters-container">
         <LocationFilters />
       </div>

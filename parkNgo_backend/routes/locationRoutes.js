@@ -8,6 +8,13 @@ router
   .get(authController.protect, locationController.getAllLocations)
   .post(locationController.createLocation);
 router
+  .route('/locations-within/:distance/center/:latlng')
+  .get(authController.protect, locationController.getLocatonsWithin);
+
+router
+  .route('/locations-distance/center/:latlng')
+  .get(authController.protect, locationController.getDistances);
+router
   .route('/:id')
   .get(locationController.getLocation)
   .patch(locationController.updateLocation)

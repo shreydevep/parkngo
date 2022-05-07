@@ -4,6 +4,7 @@ import Login from "./components/UI/Login";
 import Register from "./components/UI/Register";
 import { Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
+import Profile from "./components/UI/Profile";
 
 function App() {
   const [loginState, setLoginState] = useState({
@@ -36,6 +37,7 @@ function App() {
             />
           }
         />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );

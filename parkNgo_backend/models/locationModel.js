@@ -47,13 +47,13 @@ const locationSchema = new mongoose.Schema({
     select: false,
   },
   hostPosition: {
-    type: { String, default: 'Point', enum: ['Point'] },
+    type: { type: String, default: 'Point', enum: ['Point'] },
     coordinates: [Number],
-    address: String,
   },
 
   // Futher Schema Entries to be embedded
 });
+locationSchema.index({ hostPosition: '2dsphere' });
 const hostLocation = mongoose.model('hostLocation', locationSchema);
 
 module.exports = hostLocation;

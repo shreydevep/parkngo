@@ -15,6 +15,12 @@
   font-family: "Shizuru", cursive;
   font-size: 50px;
 }
+.login > h4{
+  font-family: "Shizuru", cursive;
+  font-size: 35px;
+  padding: 50px;
+  color: wheat;
+}
 .login-container {
   margin-top: 20vh;
   display: flex;

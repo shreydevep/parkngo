@@ -1,0 +1,81 @@
+.login > h1 {
+  font-weight: bolder;
+  margin-top: 5px;
+  cursor: default;
+}
+.login > h1:hover {
+  color: cornflowerblue;
+}
+.accountInformation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 50vh;
+}
+
+.profile-img {
+  width: 30%;
+  padding: 40px;
+  flex-direction: column;
+  display: flex;
+}
+.profile-img > img {
+  width: 250px;
+  height: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.profile-img > button {
+  margin: auto;
+}
+
+.account-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 5px dashed wheat;
+  padding-left: 10px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.account-information > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.account-information > div > label {
+  font-size: 35px;
+  font-weight: 700;
+  color: cornflowerblue;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: auto;
+}
+.account-information > div > input {
+  width: 80%;
+  height: 50px;
+  border-radius: 20px;
+  background: rgba(110, 109, 109, 0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  opacity: 0.5;
+  padding: 20px;
+  font-size: 25px;
+  color: aquamarine;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+}
+
+.account-information > div > input:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.update-button {
+  margin-top: 10px;
+}
