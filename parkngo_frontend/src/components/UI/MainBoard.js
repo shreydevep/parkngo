@@ -77,6 +77,7 @@ const MainBoard = ({ myLocationRef }) => {
         setUserCurrentLocation={setUserCurrentLocation}
         handleOnFlyTo={handleOnFlyTo}
       />
+
       <MapLeaflet
         handleOnFlyTo={handleOnFlyTo}
         handleOnSetView={handleOnSetView}

@@ -28,7 +28,7 @@ const NavBar = ({
           </NavItem>
 
           <NavItem className="nav-items">
-            <NavLink href="#">
+            <NavLink href="/profile">
               <span className="nav-items">Profile</span>
             </NavLink>
           </NavItem>
