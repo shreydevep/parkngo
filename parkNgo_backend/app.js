@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: 'http://127.0.0.1:3000',
+    origin: '*',
     credentials: true,
   })
 );
@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 //app.patch('/api/v1/Locations/:id', updateLocation);
 //app.delete('/api/v1/Locations/:id', deleteLocation);
 
-app.use('/api/v1/Locations', locationRouter);
+app.use('/api/v1/locations', locationRouter);
 app.use('/api/v1/users', userRouter);
 
 module.exports = app;
